@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templates/styles/index.css">
+    <link rel="stylesheet" href="templates/styles/header.css">
+    <link rel="stylesheet" href="templates/styles/menu.css">
+    <link rel="stylesheet" href="templates/styles/main.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <section class="cont_index">
+        <?php require_once "templates/vis_menu.php" ?>
+        <section class="cont_menu-main">
+            <?php require_once "templates/vis_header.php" ?>
+            <?php require_once "templates/vis_main.php" ?>
+        </section>
+    </section>
+</body>
+
+</html>

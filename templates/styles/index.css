@@ -1,0 +1,23 @@
+:root{
+    color-scheme: light dark;
+}
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 92ch;
+}
+
+.cont_index{
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100%;
+    height: 100%;
+}
+.cont_menu-main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
