@@ -15,10 +15,10 @@
     <section class="cont_index">
         <?php require_once "templates/vis_menu.php" ?>
         <section class="cont_menu-main">
-            <?php require_once "templates/vis_header.php" ?>
-            <?php require_once "templates/vis_main.php" ?>
+            <?php require_once "templates/main/vis_main.php" ?>
         </section>
     </section>
 </body>
+<script type="module" src="/src/routes/navMenu.js"></script>
 
 </html>

@@ -1,5 +1,38 @@
 .cont_menu{
     width: 20%;
     height: 100%;
+    padding-top: 45px;
+    padding-left: 20px ;
+    padding-right: 20px;
+}
+.us_men{
     border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    height: 9%;
+    margin-bottom: 30px;
+}
+
+.nav_men{
+    border-left: 1px solid #666;
+    height: 97%;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redactar{
+    width: 50%;
+}
+.tag_men{
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #666;
+    margin-bottom: 30px;
 }
