@@ -1,12 +1,13 @@
-<?php include('login/logout.php') ?>
-<?php 
-session_start();
-    if(!isset($_SESSION['username'])){
-        header('location: templates/login/vis_login.php');
-    };
+<?php include_once 'templates/login/logout.php' ?>
+<?php
+if (!isset($_SESSION['username'])) {
+    header('location: templates/login/vis_login.php');
+    exit;
+};
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,4 +27,5 @@ session_start();
     </section>
 </body>
 <script type="module" src="/src/routes/navMenu.js"></script>
+
 </html>
