@@ -8,6 +8,13 @@ export const emails = [{
     date: "11 dec"
 }]
 
+export const user = {
+  username : "Abraham",
+  email: "holasoylaca@gmail.com",
+  password: "hola123"
+}
+
+
 export function emailsFetch(/*fav o enviados*/){
     //Colocar el fetching de los datos, emails destacados y emails enviados
     const emailsSended = emails.map(
