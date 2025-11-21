@@ -1,4 +1,4 @@
-import { emails } from "./emails.js";
+import { emails, emailsFetch } from "./emails.js";
 
 const main = document.querySelector(".cont_main");
 export function emailSend() {
@@ -17,21 +17,12 @@ export function emailSend() {
 }
 
 export function emailSended() {
-  const emailsSended = emails.map(
-    (data) =>
-      `
-  <li class="email">
-    <b class="u_em">${data.username}</b>
-    <p>${data.message}</p>
-    <b>${data.date}</b>
-  </li>
-    `
-  );
+  
   const newMain = `
   <section class="cont_bdentry">
     <h2 class="title_main">Correos Enviados</h2> 
     <ul class="cont_email">
-      ${emailsSended}
+      ${emailsFetch()}
     </ul>
   </section>
               `;
@@ -42,6 +33,9 @@ export function emailFav() {
   const newMain = `
     <section class="cont_bdentry">
       <h2 class="title_main">Correos Destacados</h2> 
+      <ul class="cont_email">
+      ${emailsFetch()}
+    </ul>
     </section>
               `;
   main.innerHTML = newMain;

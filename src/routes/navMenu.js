@@ -4,20 +4,24 @@ const buttonSended = document.querySelector(".tag_sended");
 const buttonFav = document.querySelector(".tag_fav");
 
 buttonRedactar.addEventListener("click", () => {
-  routes("email_send");
+  routes("redactar", buttonRedactar);
 });
 
 buttonSended.addEventListener("click", () => {
   routes("tag_sended");
+  buttonSended.style = "background-color:#444;";
+  buttonFav.style = "backgrund-color:transparent;";
 });
 
 buttonFav.addEventListener("click", () => {
   routes("tag_fav");
+  buttonFav.style = "background-color:#444;";
+  buttonSended.style = "backgrund-color:transparent;";
 });
 
 function routes(route) {
   switch (route) {
-    case "email_send":
+    case "redactar":
       emailSend();
       break;
     case "tag_sended":
