@@ -1,4 +1,4 @@
-import { emails, emailsFetch } from "./emails.js";
+import { emailsFetch } from "./email.js";
 
 const main = document.querySelector(".cont_main");
 export function emailSend() {
@@ -17,16 +17,15 @@ export function emailSend() {
 }
 
 export function emailSended() {
-  
   const newMain = `
   <section class="cont_bdentry">
     <h2 class="title_main">Correos Enviados</h2> 
     <ul class="cont_email">
-      ${emailsFetch()}
     </ul>
   </section>
               `;
   main.innerHTML = newMain;
+  emailsFetch();
 }
 
 export function emailFav() {
@@ -34,9 +33,10 @@ export function emailFav() {
     <section class="cont_bdentry">
       <h2 class="title_main">Correos Destacados</h2> 
       <ul class="cont_email">
-      ${emailsFetch()}
+
     </ul>
     </section>
               `;
   main.innerHTML = newMain;
+  emailsFetch();
 }

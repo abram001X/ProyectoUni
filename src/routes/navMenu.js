@@ -5,6 +5,9 @@ const buttonFav = document.querySelector(".tag_fav");
 
 buttonRedactar.addEventListener("click", () => {
   routes("redactar", buttonRedactar);
+  buttonFav.style = "backgrund-color:transparent;";
+  
+  buttonSended.style = "backgrund-color:transparent;";
 });
 
 buttonSended.addEventListener("click", () => {

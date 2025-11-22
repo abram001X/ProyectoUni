@@ -63,14 +63,27 @@
   height: 3em;
 }
 
-.in_work{
-    resize: none;
-    height: 60%;
+.in_work {
+  resize: none;
+  height: 60%;
 }
 
-.bt_send_em{
-    margin: 10px 20px;
-    height: 40px;
-    width: 80px;
-    font-weight: 600;
+.bt_send_em {
+  margin: 10px 20px;
+  height: 40px;
+  width: 80px;
+  font-weight: 600;
+}
+.us_ic_tw {
+  font-size: 1.2em;
+  border-radius: 100%;
+  border: 1px solid;
+  padding: 13px;
+  background-color: purple;
+}
+
+.c_em{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
 }
