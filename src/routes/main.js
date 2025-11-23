@@ -28,10 +28,23 @@ export function emailSended() {
   emailsFetch();
 }
 
-export function emailFav() {
+export function emailTrash() {
   const newMain = `
     <section class="cont_bdentry">
-      <h2 class="title_main">Correos Destacados</h2> 
+      <h2 class="title_main">Papelera</h2> 
+      <ul class="cont_email">
+
+    </ul>
+    </section>
+              `;
+  main.innerHTML = newMain;
+  emailsFetch();
+}
+
+export function emailAll() {
+  const newMain = `
+    <section class="cont_bdentry">
+      <h2 class="title_main">Todos los mensajes</h2> 
       <ul class="cont_email">
 
     </ul>

@@ -82,8 +82,51 @@
   background-color: purple;
 }
 
-.c_em{
+.c_em {
   margin: 50px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.cont_users_em {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #444;
+}
+.us_b_me {
+  color: #666;
+  font-size: 1em;
+  transform: translate(0, -15px);
+  margin-left: 10px;
+  list-style: circle;
+}
+.con_dt_em {
+  display: flex;
+  margin: 0, 50px;
+  border: 1px solid;
+}
+
+.mess_em {
+  font-size: 1.3em;
+}
+
+.us_ems {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  font-weight: 700;
+  padding: 4px;
+}
+.us_ems:hover{
+  background-color: #444;
+}
+.dte_em{
+  margin-top: 10px;
+  font-size: .9em;
+  color: #555;
 }

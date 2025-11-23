@@ -29,19 +29,24 @@ function elementedClicked(emailElement) {
 
 function emailContent(id) {
   const data = emails.find((value) => value.id === id);
-  const { username, message, date } = data;
+  const { username, message, date, toEmail } = data;
   console.log(data);
   const emailCont = `
-    <section class="cont_bdentry">
+    <section class="cont_bdentry con_em_tose">
         <article class="c_em">
-            <div class="us_men">
-                <div class="us_ic_tw">
-                    ${username[0].toUpperCase()}
-                </div>
-                <b class="us_p">${username}</b>
+        <div class="cont_users_em">
+            <div class=" us_ems">
+              <div class="us_ic_tw">
+                ${toEmail[0].toUpperCase()}
+              </div>
+                <b class="us_p">${toEmail}</b>
             </div>
+            <b class="us_b_me">enviado por 
+            ${username}
+            </b>
+            </div>
+            <b class="dte_em">${date}</b> 
             <p class="mess_em">${message}</p>
-            <b class="dte_em">${date}</b>
         </article>
     </section>`;
 

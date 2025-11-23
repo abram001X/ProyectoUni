@@ -9,9 +9,8 @@
         </div>
         <div class="butt_nav">
             <button class="tag_men tag_sended" style="background-color: #444;">Enviados (9)</button>
-            <button class="tag_men tag_fav">Destacados (0)</button>
-            <button class="tag_men ">Papelera (0)</button>
-            <button class="tag_men ">Todos (0)</button>
+            <button class="tag_men tag_trash">Papelera (0)</button>
+            <button class="tag_men tag_all">Todos (0)</button>
         </div>
         <form method="post">
             <button class="ex_sess" value="send" name="logout">Cerrar sesión</button>
