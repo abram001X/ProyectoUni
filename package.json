@@ -1,0 +1,23 @@
+{
+  "name": "proyectouni",
+  "version": "1.0.0",
+  "description": "Pagina web, automatización de correos electronicos (trabajo de universidad)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abram001X/ProyectoUni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abram001X/ProyectoUni/issues"
+  },
+  "homepage": "https://github.com/abram001X/ProyectoUni#readme",
+  "devDependencies": {
+    "vitest": "^4.0.13"
+  }
+}

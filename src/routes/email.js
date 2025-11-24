@@ -10,7 +10,7 @@ export function emailsFetch(/*fav o enviados*/) {
     elementLi.setAttribute("data-id", data.id);
     ulElement.appendChild(elementLi);
     const childElemtLi = `
-    <b class="u_em">${data.username}</b>
+    <b class="u_em">${data.toEmail}</b>
     <p>${data.message}</p>
     <b>${data.date}</b>
     `;

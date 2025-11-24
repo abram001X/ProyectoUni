@@ -28,5 +28,5 @@ if (!isset($_SESSION['username'])) {
 </body>
 <script type="module" src="/src/routes/navMenu.js"></script>
 <script type="module" src="/src/routes/email.js"></script>
-
+<script type="module" src="/src/formEmail/formEmail.js"></script>
 </html>
