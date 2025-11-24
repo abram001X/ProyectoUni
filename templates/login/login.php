@@ -5,6 +5,8 @@ $user = [
     "password" => "hola123",
     "username" => "Abraham Alfonzo"
 ];
+include('session.php');
+isSession('../../index.php');
 if (!empty($_POST['action']) && !empty($_POST['password']) && !empty($_POST['email'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
