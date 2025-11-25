@@ -2,6 +2,7 @@ import { handleFormEmail } from "../formEmail/formEmail.js";
 import { emailsFetch } from "./email.js";
 
 const main = document.querySelector(".cont_main");
+
 export function emailSend() {
   const newMain = `
   <form class='cont_bdentry form_new_em'>
@@ -35,7 +36,7 @@ export function emailTrash() {
     <section class="cont_bdentry">
       <h2 class="title_main">Papelera</h2> 
       <ul class="cont_email">
-    </ul>
+      </ul>
     </section>
               `;
   main.innerHTML = newMain;
@@ -47,7 +48,7 @@ export function emailAll() {
     <section class="cont_bdentry">
       <h2 class="title_main">Todos los mensajes</h2> 
       <ul class="cont_email">
-    </ul>
+      </ul>
     </section>
               `;
   main.innerHTML = newMain;

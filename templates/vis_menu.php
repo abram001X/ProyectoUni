@@ -8,7 +8,7 @@
             <button class="redactar">REDACTAR</button>
         </div>
         <div class="butt_nav">
-            <button class="tag_men tag_sended" style="background-color: #444;">Enviados (9)</button>
+            <button class="tag_men tag_sended">Enviados (9)</button>
             <button class="tag_men tag_trash">Papelera (0)</button>
             <button class="tag_men tag_all">Todos (0)</button>
         </div>
