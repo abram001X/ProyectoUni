@@ -15,6 +15,7 @@
 }
 .cont_email {
   padding: 0;
+  width: 100%;
 }
 
 .u_em {
@@ -134,4 +135,8 @@
   margin-top: 10px;
   font-size: .9em;
   color: #555;
+}
+.a_li_em{
+  text-decoration: none;
+  color:  #fff;
 }

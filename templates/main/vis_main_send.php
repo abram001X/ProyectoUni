@@ -1,5 +1,9 @@
+
 <main class="cont_main">
     <section class="cont_bdentry">
-            <p>Bandeja de entrada</p>
+        <p>Correos Enviados</p>
+        <ul class="cont_email">
+            <?php include_once './src/routes/emails.php'?>
+        </ul>
     </section>
 </main>

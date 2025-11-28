@@ -6,8 +6,10 @@ export function handleFormEmail() {
   let textAs = "";
   let textWork = "";
   let listEmails = [];
+
   //eventos de inputs
   inpUsers.addEventListener("input", (e) => {
+    console.log(e.target.value)
     listEmails = getEmails(e.target.value);
   });
 
@@ -21,6 +23,7 @@ export function handleFormEmail() {
 
   formEmail.addEventListener("submit", (e) => { //enviar formulario al server
     e.preventDefault();
+    console.log(listEmails)
     //textAs
     //textWork
     //listEmails
