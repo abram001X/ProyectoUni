@@ -5,6 +5,7 @@ isSession('../../index.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +13,15 @@ isSession('../../index.php');
     <link rel="stylesheet" href="../styles/login.css">
     <title>Proyecto Uni</title>
 </head>
+
 <body>
     <section class="cont_login">
         <div class="cont_form-reg">
             <div class="shds">
+                <img src="../../src/assets/velozpost.jpg" alt="velozpost" class="img_login">
             </div>
             <form action="login.php" class="form" method="post">
-                <p>Registrate para iniciar sesión e ingresar a (Nombre de la app web)</p>
+                <p style="text-align: center;">Registrate para iniciar sesión e ingresar a VelozPost</p>
                 <input type="email" class="in-em" placeholder="Nombre de usuario" name="email">
                 <input type="email" class="in-em" placeholder="Ingresa tu email" name="email">
 

@@ -13,9 +13,10 @@
     <section class="cont_login">
         <div class="cont_form">
             <div class="shds">
+                <img src="../../src/assets/velozpost.jpg" alt="velozpost" class="img_login">
             </div>
             <form action="" class="form" method="post">
-                <p>Inicia sesión con tu correo electrónico</p>
+                <p style="text-align: center;">Inicia sesión con tu correo electrónico</p>
                 <input type="email" class="in-em" placeholder="Ingresa tu email" name="email">
                 <input type="password" class="in-passw" placeholder="Ingresa tu contraseña" name="password">
                 <p class="ms_inv">
