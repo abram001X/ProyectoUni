@@ -21,7 +21,6 @@
 .shds{
     display: grid;
     place-content: center;
-    border: 1px solid;
     border-radius: 20px;
     height: 100%;
     width: 50%;  
@@ -40,6 +39,8 @@
     font-size: 1.4em;
     height: 100%;
     color-scheme: light dark;
+    
+    background-color: #000;
 }
 
 .form input{
@@ -59,4 +60,5 @@
 .img_login{
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }               

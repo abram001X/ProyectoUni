@@ -1,3 +1,9 @@
+<?php
+if (!empty($_POST['inp_destino'])) {
+  $emails = $_POST['inp_destino'];
+  $emailList = explode(',', $emails);
+}
+?>
 
 <form method="post" class='cont_bdentry form_new_em'>
   <h2 class="title_main">Nuevo correo</h2>
@@ -8,4 +14,3 @@
     <button name="post_em" class="bt_send_em">Enviar</button>
   </div>
 </form>
-<script type="module" src="/src/formEmail/formEmail.js"></script>

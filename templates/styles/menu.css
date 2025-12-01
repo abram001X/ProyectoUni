@@ -1,9 +1,9 @@
 .cont_menu{
     width: 20%;
     height: 100%;
-    padding-top: 45px;
     padding-left: 20px ;
     padding-right: 20px;
+
 }
 .us_men{
     display: flex;
@@ -15,7 +15,6 @@
     font-weight: 700;
     padding: 4px;
 }
-
 .us_ic{
     font-size: 1.2em;
     border-radius: 100%;
@@ -26,25 +25,24 @@
 .us_p{
     margin-left: 10px;
 }
-
 .us_men:hover{
     background-color: #444;
 }
 .nav_men{
-    border-left: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border: 1px solid #666;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 97%;
+    height: 100%;
     width: 100%;   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
+    background-color: #000;
 }
 
 .redactar{
-
     width: 40%;
     border-radius: 15px;
     margin-left: 25px;
@@ -60,7 +58,6 @@
 
 .tag_men{
     cursor: pointer;
-    width: 100%;
     border: none;
     text-align: center;
     border-top-right-radius: 15px;
