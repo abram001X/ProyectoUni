@@ -1,8 +1,7 @@
 <?php
 include_once 'emails.php';
 $email = [];
-function getEmails()
-{
+function getEmails(){
     global $emails;
     global $id;
     foreach ($emails as $em) {
