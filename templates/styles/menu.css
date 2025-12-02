@@ -43,21 +43,23 @@
 
 .svg_red{
     color: #000;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    margin-left: 4px;
 }
 .redactar{
     display: flex;
-    width: 40%;
-    border-radius: 15px;
+    align-items: center;
+    max-width: 70%;
+    padding: 0px 10px;
+    border-radius: 15px;    
     margin-right: 10px;
-    border: none;
     background-color: #fff;
     color: #000;
     cursor: pointer;
     text-decoration: none;
 }
 .p_re{
-    font-size: 1em;
+    font-size: .9em;
 }
 .tag_men{
     cursor: pointer;
@@ -84,12 +86,13 @@
 .tag_men:hover{
     background-color: #444;
 }
-
 .cont_us-red{
     width: 100%;
     color: #fff;
 }
 .ex_sess{
+    display: flex;
+    align-items: center;
     padding: 10px;
     align-self: flex-start;
     background-color:#36f;
@@ -102,5 +105,8 @@
     margin: 10px;
     width: 40%;
     text-align: start;
-
+}
+.cl_svg{
+    font-size: 1em;
+    color: #000;
 }
