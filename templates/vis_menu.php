@@ -2,7 +2,7 @@
     <nav class="nav_men">
         <div class="cont_us-red">
             <div class="us_men">
-                <div class="us_ic">A</div>
+                <div class="us_ic"><?php echo $_SESSION['username'][0] ?></div>
                 <b class="us_p"><?php echo $_SESSION['username'] ?></b>
             </div>
         </div>
