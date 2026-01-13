@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-include('../../src/api/get_login.php');
+include('../../src/api/api_server.php');
 include('session.php');
 isSession('../../index.php');
 

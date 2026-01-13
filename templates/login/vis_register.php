@@ -1,8 +1,4 @@
-<?php
-session_start();
-include('session.php');
-isSession('../../index.php');
-?>
+<?php include('register.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,14 +16,17 @@ isSession('../../index.php');
             <div class="shds">
                 <img src="../../src/assets/velozpost.jpg" alt="velozpost" class="img_login">
             </div>
-            <form action="login.php" class="form" method="post">
+            <form action="" class="form" method="post">
                 <p style="text-align: center;">Registrate para iniciar sesión e ingresar a VelozPost</p>
-                <input type="email" class="in-em" placeholder="Nombre de usuario" name="email">
+                <input type="text" class="in-em" placeholder="Nombre de usuario" name="username">
                 <input type="email" class="in-em" placeholder="Ingresa tu email" name="email">
 
                 <input type="password" class="in-passw" placeholder="Ingresa nueva contraseña" name="password">
-                <input type="password" class="in-passw" placeholder="Repite la contraseña" name="password">
-
+                <input type="password" class="in-passw" placeholder="Repite la contraseña" name="password2">
+                <p class="ms_inv"><?php if (isset($_SESSION['error_message_re'])) {
+                                        echo $_SESSION['error_message_re'];
+                                        session_destroy();
+                                    } else ""; ?></p>
                 <button type="submit" name="action" value="send" class="bu-ses">Registrarse</button>
                 <a href="vis_login.php" style="font-size: .8em;">Iniciar sesión</a>
             </form>
