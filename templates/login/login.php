@@ -1,23 +1,26 @@
 <?php
 session_start();
-$user = [
-    "email" => "holasoylaca@gmail.com",
-    "password" => "hola123",
-    "username" => "Abraham Alfonzo"
-];
+include('../../src/api/api_server.php');
 include('session.php');
 isSession('../../index.php');
+
+
 if (!empty($_POST['action']) && !empty($_POST['password']) && !empty($_POST['email'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $username = $user['username'];
-    if ($email === $user['email'] && $password === $user['password']) {
+    $user = [
+        "email" => $email,
+        "password" => $password
+    ];
+
+    $response = api_login($user);
+    if ($response == "Login exitoso") {
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
-        $_SESSION['username'] = $username;
+        $_SESSION['username'] = "Valverde";
         header('location: ../../index.php');
         exit;
     } else {
-        $_SESSION['error_message'] = "Usuario Inválido";
+        $_SESSION['error_message'] = $response;
     };
 };
