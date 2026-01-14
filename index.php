@@ -5,6 +5,9 @@ if (!isset($_SESSION['username'])) {
     exit;
 };
 ?>
+<?php include_once 'src/formEmail/formEmail.php' ?>
+<?php include_once 'routes.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,14 +23,10 @@ if (!isset($_SESSION['username'])) {
 
 <body>
     <section class="cont_index">
-        <?php require_once "templates/vis_menu.php" ?>
+        <?php include_once 'templates/vis_menu.php' ?>
         <section class="cont_menu-main">
-            <?php require_once "templates/main/vis_main.php" ?>
+            <?php include_once $vis_main ?>
         </section>
     </section>
 </body>
-<script type="module" src="/src/routes/navMenu.js"></script>
-<script type="module" src="/src/routes/email.js"></script>
-<script type="module" src="/src/formEmail/formEmail.js"></script>
-
 </html>

@@ -52,3 +52,5 @@ function emailContent(id) {
 
   main.innerHTML = emailCont;
 }
+
+

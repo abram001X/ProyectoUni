@@ -12,9 +12,11 @@
   width: 100%;
   height: 100%;
   color: #fff;
+  background-color: #000;
 }
 .cont_email {
   padding: 0;
+  width: 100%;
 }
 
 .u_em {
@@ -30,16 +32,14 @@
   -webkit-box-orient: vertical;
 }
 .email {
-  border: 1px solid #444;
   margin-bottom: 5px;
   max-height: 100px;
   list-style: none;
   padding: 10px 20px;
+  width: 90%;
 }
 
-.email:hover {
-  background-color: #333;
-}
+
 .cont_newema {
   display: flex;
   flex-direction: column;
@@ -127,11 +127,29 @@
   font-weight: 700;
   padding: 4px;
 }
-.us_ems:hover{
+.us_ems:hover {
   background-color: #444;
 }
-.dte_em{
+.dte_em {
   margin-top: 10px;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #555;
+}
+.a_li_em {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #666;
+}
+.a_li_em:hover {
+  background-color: #333;
+}
+svg{
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.svg_trash:hover{
+  color: #f02;
 }

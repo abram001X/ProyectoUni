@@ -9,6 +9,7 @@ function verifyUser(email, password) {
     window.location.href = "../../index.php";
   }
 }
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let email = inputEmail.value;
