@@ -1,15 +1,7 @@
 <?php
-$url = "https://23736764f051.ngrok-free.app";
+include('options_requests.php');
+$url = "https://consent-aims-literally-gmbh.trycloudflare.com";
 
-function options_requests($api)
-{
-    curl_setopt($api, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($api, CURLOPT_POST, true);
-
-    $response = curl_exec($api);
-    $response_decode = json_decode($response, true);
-    return $response_decode;
-};
 
 function api_login($user)
 {

@@ -7,10 +7,8 @@ if (!isset($_SESSION['username'])) {
 ?>
 <?php include_once 'src/formEmail/formEmail.php' ?>
 <?php include_once 'routes.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +18,6 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="templates/styles/main.css">
     <title>Proyecto</title>
 </head>
-
 <body>
     <section class="cont_index">
         <?php include_once 'templates/vis_menu.php' ?>

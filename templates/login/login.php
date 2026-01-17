@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../../src/api/api_server.php');
+include('../../src/api/api_server_login.php');
 include('session.php');
 isSession('../../index.php');
 
@@ -14,10 +14,11 @@ if (!empty($_POST['action']) && !empty($_POST['password']) && !empty($_POST['ema
     ];
 
     $response = api_login($user);
-    if ($response == "Login exitoso") {
+    if (str_contains($response, "Login exitoso")) {
+        $username = substr($response, 15);
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
-        $_SESSION['username'] = "Valverde";
+        $_SESSION['username'] = $username;
         header('location: ../../index.php');
         exit;
     } else {

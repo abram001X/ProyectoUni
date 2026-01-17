@@ -58,6 +58,7 @@
   padding-right: 5px;
   border: none;
   border-bottom: 1px solid #333;
+  color: #fff
 }
 
 .in_tosend {
@@ -152,4 +153,8 @@ svg{
 
 .svg_trash:hover{
   color: #f02;
+}
+
+textarea{
+  color: #fff;
 }

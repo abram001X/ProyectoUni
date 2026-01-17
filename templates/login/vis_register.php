@@ -23,10 +23,12 @@
 
                 <input type="password" class="in-passw" placeholder="Ingresa nueva contraseña" name="password">
                 <input type="password" class="in-passw" placeholder="Repite la contraseña" name="password2">
-                <p class="ms_inv"><?php if (isset($_SESSION['error_message_re'])) {
+                <p class="ms_inv">
+                    <?php if (isset($_SESSION['error_message_re'])) {
                                         echo $_SESSION['error_message_re'];
                                         session_destroy();
-                                    } else ""; ?></p>
+                                    } else ""; ?>
+                    </p>
                 <button type="submit" name="action" value="send" class="bu-ses">Registrarse</button>
                 <a href="vis_login.php" style="font-size: .8em;">Iniciar sesión</a>
             </form>

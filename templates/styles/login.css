@@ -12,12 +12,14 @@
     width: 50%;
     height: 50%;
 }
+
 .cont_form-reg{
     display: flex;
     justify-content: space-around;
     width: 50%;
     height: 70%;
 }
+
 .shds{
     display: grid;
     place-content: center;
@@ -27,6 +29,7 @@
     margin-right: 50px;
     transform: translate(-80px, 0px);
 }
+
 .form{
     color: #fff;
     padding: 20px;
