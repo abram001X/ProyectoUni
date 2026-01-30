@@ -1,4 +1,5 @@
 <?php
+$url = "https://loops-chief-expressed-scales.trycloudflare.com";
 function options_requests($api)
 {
 

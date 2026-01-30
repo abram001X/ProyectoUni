@@ -1,8 +1,5 @@
 <?php
 include('options_requests.php');
-$url = "https://consent-aims-literally-gmbh.trycloudflare.com";
-
-
 function api_login($user)
 {
     global $url;

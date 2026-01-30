@@ -1,7 +1,5 @@
 <?php
 include_once('options_requests.php');
-$url = "https://consent-aims-literally-gmbh.trycloudflare.com";
-
 function api_send_all($subject, $message)
 {
     global $url;
