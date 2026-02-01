@@ -6,11 +6,15 @@ isSession('../../index.php');
 
 
 if (!empty($_POST['action']) && !empty($_POST['password']) && !empty($_POST['email'])) {
+    $password_rep = $_POST['password'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    if (str_contains($password, " ")) {
+        $password_rep = str_replace(" ", "%20", $password);
+    }
     $user = [
         "email" => $email,
-        "password" => $password
+        "password" => $password_rep
     ];
 
     $response = api_login($user);
@@ -25,3 +29,5 @@ if (!empty($_POST['action']) && !empty($_POST['password']) && !empty($_POST['ema
         $_SESSION['error_message'] = $response;
     };
 };
+?>
+<p></p>
