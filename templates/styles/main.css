@@ -18,13 +18,11 @@
   padding: 0;
   width: 100%;
 }
-
 .u_em {
   font-size: 1.5em;
   margin: 0;
 }
 .email p {
-  margin-bottom: 5px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
@@ -32,13 +30,10 @@
   -webkit-box-orient: vertical;
 }
 .email {
-  margin-bottom: 5px;
   max-height: 100px;
   list-style: none;
-  padding: 10px 20px;
   width: 90%;
 }
-
 .cont_newema {
   display: flex;
   flex-direction: column;
@@ -137,10 +132,15 @@
 }
 .a_li_em {
   display: flex;
-  align-items: center;
   text-decoration: none;
   color: #fff;
   border: 1px solid #666;
+  height: 120px;
+  padding: 10px;
+}
+.ms_dl {
+  color: #f02;
+  margin-left: 30px;
 }
 .a_li_em:hover {
   background-color: #333;
@@ -154,5 +154,8 @@ svg {
   color: #f02;
 }
 
-
-
+.b_emails_trash {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
