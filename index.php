@@ -34,7 +34,7 @@ if (!isset($_SESSION['username'])) {
     const username = '<?php echo $_SESSION['username'] ?>'
     const route = '<?php echo $vis_main ?>'
     const ulEmail = document.querySelector(".cont_email");
-    const url = "http://localhost:3000";
+    const url = "https://proyectouni-backend.onrender.com";
 
     const getEmails = async () => {
         const res = await fetch(url + '/get_emails/' + username);
