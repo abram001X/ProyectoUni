@@ -159,3 +159,7 @@ svg {
   border: none;
   cursor: pointer;
 }
+
+.cont_email::-webkit-scrollbar-track{
+  background: #000;
+}
